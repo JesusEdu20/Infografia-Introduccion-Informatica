@@ -1,0 +1,38 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    font-size: 62.5%;
+}
+
+@import "variables";
+@import "header-intro-computer";
+@import "body";
+@import "footer";
+
+
+.message-input
+{
+    /*width: 100px;
+    height: 100px;*/
+    width: auto;
+    padding: 5px 8px;
+    background-color:  #bbbbbb;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.res-message
+{
+    width: auto;
+    padding: 5px 8px;
+    background-color:   #f1f1f1;
+    border-radius: 5px;
+    margin: 5px;
+}
+

@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+.header-intro-computer {
+  width: 100%;
+  min-width: 800px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #dcdde2;
+  row-gap: 40px;
+  font-family: "Poppins", sans-serif; }
+  .header-intro-computer .intro-computer-title {
+    text-align: center;
+    font-size: 1.5rem; }
+  .header-intro-computer .intro-computer-subtitle {
+    font-size: 1.2rem;
+    position: relative;
+    display: flex;
+    justify-content: center; }
+    .header-intro-computer .intro-computer-subtitle .intro-computer-svgItem {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      top: 25px; }
+
+.key-words {
+  color: #4930e8;
+  font-weight: 600; }
+
+.section-concepts-of-information {
+  width: 100%;
+  min-width: 800px;
+  height: 500px;
+  padding: 60px; }
+  .section-concepts-of-information .concepts-of-information-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 120px); }
+    .section-concepts-of-information .concepts-of-information-container .concepts-of-information-icon {
+      width: 100px;
+      height: 100px; }
+
+.concepts-of-information-item {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem; }
+
+.concepts-of-information-item--two {
+  padding: 20px; }
+
+.concepts-of-information-item--three {
+  grid-area: 1/3/3/3;
+  width: 180px;
+  justify-self: right;
+  /*background-color: #dcdde2;*/
+  position: relative; }
+  .concepts-of-information-item--three .concepts-of-information-item-three-img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -60px;
+    left: -70px; }
+  .concepts-of-information-item--three .concepts-of-information-item-three-img img {
+    width: 100%;
+    height: 100%; }
+
+.concepts-of-information-item--Four {
+  grid-area: 3/1/3/4;
+  background-color: #eaecf3; }
+
+.section-code-binary {
+  width: 100%;
+  min-width: 800px;
+  height: 410px;
+  padding: 60px; }
+  .section-code-binary .code-binary-container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex; }
+    .section-code-binary .code-binary-container .code-binary-column {
+      width: 350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1.5rem;
+      font-family: "Poppins", sans-serif; }
+    .section-code-binary .code-binary-container .code-binary-paragraph-container {
+      padding: 20px; }
+
+.code-binary-column__left {
+  position: relative; }
+  .code-binary-column__left .code-binary-paragraph-container--colunm-left {
+    background-color: #dcdde2;
+    width: 200px;
+    height: 200px; }
+
+.code-binary-column__left div:nth-child(2) {
+  width: 180px;
+  padding: 20px;
+  background-color: #f3f3f3;
+  position: absolute;
+  top: 150px;
+  left: 70px; }
+
+.code-binary-column__center .code-binary-img-container--colunm-center {
+  width: 200px;
+  height: 200px; }
+.code-binary-column__center .code-binary-img-container--colunm-center img {
+  width: 100%;
+  height: 100%; }
+
+.code-binary-column__right .code-binary-img-container--colunm-right {
+  width: 170px;
+  height: 200px;
+  margin-left: 40px;
+  /*padding: 0 0 0 30px;*/ }
+.code-binary-column__right .code-binary-img-container--colunm-right img {
+  width: 100%;
+  height: 100%; }
+
+.section-how-work-binary {
+  width: 100%;
+  min-width: 800px;
+  height: 600px;
+  padding: 90px 60px 0; }
+  .section-how-work-binary .how-work-binary-container {
+    width: 100%;
+    height: 100%;
+    display: flex; }
+  .section-how-work-binary .how-work-binary-info-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem; }
+  .section-how-work-binary .how-work-binary-column {
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    padding: 40px; }
+
+.how-work-binary-container-column--left {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 40px; }
+
+.how-work-binary-container-column--right {
+  width: 60%;
+  height: 100%; }
+  .how-work-binary-container-column--right .how-work-binary-interactive-chat {
+    padding: 10px;
+    width: 100%;
+    height: 100%; }
+    .how-work-binary-container-column--right .how-work-binary-interactive-chat .interactive-chat-screen {
+      width: 100%;
+      height: 90%;
+      overflow-y: auto;
+      scroll-behavior: smooth;
+      /*display: flex;*/
+      border-top: 1.8px solid  #cecece; }
+      .how-work-binary-container-column--right .how-work-binary-interactive-chat .interactive-chat-screen .reel {
+        flex-direction: column;
+        width: 50%;
+        height: 100%;
+        /*display: inline-block;*/
+        display: flex; }
+      .how-work-binary-container-column--right .how-work-binary-interactive-chat .interactive-chat-screen .reel--left {
+        float: left; }
+    .how-work-binary-container-column--right .how-work-binary-interactive-chat .interactive-chat-inputs-container {
+      width: 100%;
+      height: 10%;
+      display: flex; }
+      .how-work-binary-container-column--right .how-work-binary-interactive-chat .interactive-chat-inputs-container .interactive-chat__input-type {
+        width: 80%;
+        display: flex;
+        align-items: center; }
+      .how-work-binary-container-column--right .how-work-binary-interactive-chat .interactive-chat-inputs-container .interactive-chat__input-type input {
+        width: 100%;
+        height: 30px;
+        padding: 0 20px;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        background-color: #dcdde2;
+        font-family: "Poppins", sans-serif; }
+      .how-work-binary-container-column--right .how-work-binary-interactive-chat .interactive-chat-inputs-container .interactive-chat__button-send {
+        width: 20%;
+        text-align: center; }
+      .how-work-binary-container-column--right .how-work-binary-interactive-chat .interactive-chat-inputs-container .interactive-chat__button-send input {
+        width: 40px;
+        height: 40px;
+        border-radius: 30px;
+        border: none;
+        background-color: #b6b8bf; }
+
+.footer-types-of-pc {
+  width: 100%;
+  min-width: 800px;
+  height: 600px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem; }
+  .footer-types-of-pc .types-of-pc-header h2 {
+    color: #656770; }
+
+.types-of-pc-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 200px 400px;
+  padding: 90px 60px 0; }
+  .types-of-pc-container .types-of-pc-header {
+    grid-area: 1/1/1/4;
+    justify-self: center;
+    align-self: center; }
+  .types-of-pc-container .types-of-pc-culumn {
+    padding: 0 20px; }
+    .types-of-pc-container .types-of-pc-culumn h3 {
+      color: #656770;
+      margin-bottom: 20px; }
+
+/*.types-of-pc-paragraph--culumn-left{
+
+}
+
+.types-of-pc-paragraph--culumn-center{
+
+}
+
+.types-of-pc-paragraph--culumn-right{
+
+}*/
+.footer-credits-info {
+  width: 100%;
+  height: auto;
+  /*background-color: #525fff;*/
+  background-color: #4930e8;
+  color: #e2dfdf;
+  font-size: 1.4rem;
+  padding: 40px 0; }
+  .footer-credits-info .credits-info-student {
+    width: 100%;
+    display: flex;
+    justify-content: space-around; }
+  .footer-credits-info .credits-info-university {
+    padding: 20px 60px 0px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; }
+    .footer-credits-info .credits-info-university a {
+      text-decoration: none;
+      color: #e2dfdf; }
+    .footer-credits-info .credits-info-university .credits-info-university-content {
+      /*padding: 50px 0;*/
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+    .footer-credits-info .credits-info-university .credits-info-university-logo {
+      display: inline-block;
+      display: flex;
+      align-items: center;
+      width: 116px;
+      height: 116px;
+      background-image: url("https://saia2.uts.edu.ve/pluginfile.php/1/core_admin/logo/0x150/1639415054/Membrete%20UTS%20covid-19.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: left;
+      background-color: white;
+      border-radius: 100px; }
+
+.message-input {
+  /*width: 100px;
+  height: 100px;*/
+  width: auto;
+  padding: 5px 8px;
+  background-color: #bbbbbb;
+  border-radius: 5px;
+  margin: 5px; }
+
+.res-message {
+  width: auto;
+  padding: 5px 8px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  margin: 5px; }
+
+/*# sourceMappingURL=style.css.map */

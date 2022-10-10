@@ -1,0 +1,113 @@
+.footer-types-of-pc{
+    width: 100%;
+    min-width: 800px;
+    height: 600px;
+   
+    font-family: $primary-font;
+    font-size: 1.5rem;
+
+  
+
+    .types-of-pc-header
+    {
+        h2
+        {
+            color: #656770;
+        }
+    }
+}
+
+
+.types-of-pc-container{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px 400px ;
+    padding: 90px 60px 0 ;
+
+    .types-of-pc-header
+    {
+        grid-area: 1/1/1/4;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .types-of-pc-culumn
+    {
+        h3
+        {
+            color: #656770;
+            margin-bottom: 20px;
+        }
+
+        padding: 0 20px;
+
+
+    }
+    
+}
+
+
+/*.types-of-pc-paragraph--culumn-left{
+
+}
+
+.types-of-pc-paragraph--culumn-center{
+
+}
+
+.types-of-pc-paragraph--culumn-right{
+
+}*/
+
+
+.footer-credits-info{
+    width: 100%;
+    height: auto;
+    /*background-color: #525fff;*/
+    background-color: #4930e8;
+    color: rgb(226, 223, 223);
+    font-size: 1.4rem;
+    padding: 40px 0;
+
+    .credits-info-student{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+
+    .credits-info-university{
+
+      padding: 20px 60px 0px;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+
+      a{text-decoration: none; color:  rgb(226, 223, 223);}
+
+      .credits-info-university-content{
+        /*padding: 50px 0;*/
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .credits-info-university-logo{
+        
+        display: inline-block;
+        display: flex;
+        align-items: center;
+        width: 116px;
+        height: 116px;
+        
+        background-image: url("https://saia2.uts.edu.ve/pluginfile.php/1/core_admin/logo/0x150/1639415054/Membrete%20UTS%20covid-19.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left;
+        background-color: white;
+        border-radius: 100px;
+      }
+    }
+}
+
