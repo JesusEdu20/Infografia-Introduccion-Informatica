@@ -1,8 +1,10 @@
 //parameters
 /*
 1.messageArray: message taken from the input-text turned into speech
-2.base: const base=97;
-3.
+2.base
+3.ASCII
+4.Binary: methods
+5.binaryToString: methods
 */
 
 
@@ -37,6 +39,7 @@ export  const translator={
                 else{
                 
                     console.log("err");
+                
                 }
 
             }

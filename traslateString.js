@@ -11,10 +11,10 @@ export class binaryToStringObject{
                 
                  element.map(
                     bit=>{
-                        console.log(bit)
+                        
                         bytes+=bit
                        
-                        console.log (bytes)
+                        
                     }
                  )
                 
