@@ -31,6 +31,33 @@ html {
       height: 50px;
       top: 25px; }
 
+.menu-position {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+  top: 100px;
+  left: 0px;
+  width: 50px;
+  height: 200px; }
+  .menu-position a {
+    width: 40px;
+    height: 40px;
+    background-color: #cbbcf8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    transition: color 0.2s;
+    transition: width 0.2s; }
+    .menu-position a:hover {
+      width: 50px;
+      color: #a799d1; }
+
 .key-words {
   color: #4930e8;
   font-weight: 600; }
