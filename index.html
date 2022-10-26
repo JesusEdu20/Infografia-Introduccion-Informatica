@@ -17,7 +17,17 @@
     
 </head>
 <body>
-        <header class="header-intro-computer">
+
+    <div class="menu-position">
+        <a href="#intro-computer">1</a>
+        <a href="#concepts-of-information">2</a>
+        <a href="#code-binary">3</a>
+        <a href="#how-work-binary">4</a>
+        <a href="#types-of-pc">5</a> 
+    </div>
+
+
+        <header class="header-intro-computer" id="intro-computer">
 
             <div class="intro-computer-title">
                 <h1 class="intro-computer-title__h1">¿Computadoras?</h1>
@@ -41,7 +51,7 @@
         </header>
 
 
-        <section class="section-concepts-of-information">
+        <section class="section-concepts-of-information" id="concepts-of-information">
             
             <div class="concepts-of-information-container">
 
@@ -100,7 +110,7 @@
 
 
 
-        <section class="section-code-binary">
+        <section class="section-code-binary" id="code-binary">
             
             <div class="code-binary-container">
 
@@ -165,7 +175,7 @@
         </section>
 
 
-        <section class="section-how-work-binary">
+        <section class="section-how-work-binary" id="how-work-binary">
 
             <div class="how-work-binary-container">
 
@@ -209,7 +219,11 @@
                             </div>
                            
                             <div class="interactive-chat__button-send">
-                                <input class="input-to-send" type="button">
+                                <!-- <input class="input-to-send" type="button"> -->
+                                <button class="input-to-send">
+                                    <span></span>
+                                </button>
+    
                             </div>
 
                         </div>
@@ -229,7 +243,7 @@
                     Todos son secuencias de bytes
                 </p>
                 <p class="how-work-binary-info-container__p">
-                    <span class="key-words">Un bit equivale a 6 bytes</span>
+                    <span class="key-words">Un byte equivale a 8 bits</span>
                 </p>
 
             </div>
@@ -244,7 +258,7 @@
 
 
 
-        <footer class="footer-types-of-pc">
+        <footer class="footer-types-of-pc" id="types-of-pc">
 
             <div class="types-of-pc-container">
 
@@ -330,6 +344,7 @@
 
 
         <script src="/index.js" type="module"></script>
+       
 </body>
 </html>
 

@@ -2,8 +2,6 @@
 
 export class binaryObject{
     constructor(){
-    
-
     }
 
     convertToBinary(dec){
@@ -11,14 +9,9 @@ export class binaryObject{
         const arrayBinary=[]
 
        do{
-            let rest=dec%2  
+          let rest=dec%2  
           dec/=2
-          dec=Math.floor(dec)
-         
-        
-         
-          
-         
+          dec=Math.floor(dec) 
         
           arrayBinary.unshift(rest)  
        }
@@ -27,9 +20,55 @@ export class binaryObject{
        return arrayBinary
 
     }
+
+    binaryToDec(binary){
+        let position=binary.length-1;
+        const convert= binary.map((v, index)=>{ let power=2**position; position-=1; return v*power})
+        .reduce((preV, v )=> preV+v);
+        
+        return convert
+    }
 }
 
 
 
 
 
+
+
+
+
+
+
+/*
+function convert(binary){
+    const dec=binary.map((v, index)=>
+        {index*2})
+}
+*/ 
+
+
+/*function convert(binary){
+    let position=binary.length-1;
+    const convert= binary.map((v, index)=>{ let power=2**position; position-=1; return v*power})
+    .reduce((preV, v )=> preV+v);
+    
+    return convert
+}
+
+let result= convert([1,1,0,1,1]);
+console.log(result)*/
+
+/*reduce((preV, v )=> {preV*v});
+    return dec*/
+
+/*const binaryToDec={
+
+    convert:(binary)=>{
+        let position=binary.length-1;
+        const convert= binary.map((v, index)=>{ let power=2**position; position-=1; return v*power})
+        .reduce((preV, v )=> preV+v);
+        
+        return convert
+    }
+}*/

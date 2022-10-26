@@ -31,6 +31,33 @@ html {
       height: 50px;
       top: 25px; }
 
+.menu-position {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+  top: 100px;
+  left: 0px;
+  width: 50px;
+  height: 200px; }
+  .menu-position a {
+    width: 40px;
+    height: 40px;
+    background-color: #cbbcf8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    transition: color 0.2s;
+    transition: width 0.2s; }
+    .menu-position a:hover {
+      width: 50px;
+      color: #a799d1; }
+
 .key-words {
   color: #4930e8;
   font-weight: 600; }
@@ -203,12 +230,21 @@ html {
       .how-work-binary-container-column--right .how-work-binary-interactive-chat .interactive-chat-inputs-container .interactive-chat__button-send {
         width: 20%;
         text-align: center; }
-      .how-work-binary-container-column--right .how-work-binary-interactive-chat .interactive-chat-inputs-container .interactive-chat__button-send input {
-        width: 40px;
-        height: 40px;
-        border-radius: 30px;
-        border: none;
-        background-color: #b6b8bf; }
+        .how-work-binary-container-column--right .how-work-binary-interactive-chat .interactive-chat-inputs-container .interactive-chat__button-send .input-to-send {
+          width: 40px;
+          height: 40px;
+          border: none;
+          border-radius: 30px;
+          outline: none;
+          cursor: pointer; }
+      .how-work-binary-container-column--right .how-work-binary-interactive-chat .interactive-chat-inputs-container .interactive-chat__button-send span {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        background-image: url("/Assets/telegramIconColor.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; }
 
 .footer-types-of-pc {
   width: 100%;
