@@ -22,13 +22,15 @@ export class binaryObject{
     }
 
     binaryToDec(binary){
-        let position=binary.length-1;
-        const convert= binary.map((v, index)=>{ let power=2**position; position-=1; return v*power})
+        let position=binary.length-1; //(length-1)to include the zero in the last iteration
+        const convert= binary.map((v)=>{ let power=2**position; position-=1; return v*power; })
         .reduce((preV, v )=> preV+v);
         
         return convert
     }
 }
+
+
 
 
 

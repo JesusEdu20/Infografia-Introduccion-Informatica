@@ -1,12 +1,21 @@
-import {binaryObject} from "./binaryObject.js"
+import { binaryObject } from "./binaryObject.js";
 import {objectSend} from "./sendToDom.js";
 import {binaryToStringObject} from "./traslateString.js"
+
+
+//test with the object evaluate
+import { evaluateInput } from "./evaluateInput.js";
+
+
 //
 import {translator} from "./translator.js";
 //
 let binary=new binaryObject;
 let send= new objectSend;
 let binaryToString= new binaryToStringObject;
+
+
+
 
 
 //const base=97;
@@ -23,20 +32,64 @@ const ASCII=[{name:" "},{name:"!"},{name:""},{name:"#"},{name:"$"},{name:"%"},{n
  const screen=document.querySelector(".reel--right");
  const responseScreen=document.querySelector(".reel--left");
  let test=document.querySelector(".interactive-chat-screen")
+
+ const switchTraslator=document.getElementById("switch-traslator__input");
  
 
  /*Oyente*/
+ switchTraslator.addEventListener("click", (e)=>{
+    if(switchTraslator.value=="on"){
+        switchTraslator.value="off";
+        console.log(switchTraslator.value);
+    }
+
+    else if(switchTraslator.value=="off"){
+        switchTraslator.value="on";
+        console.log(switchTraslator.value);
+    }
+
+ });
+
  sendBox.addEventListener("click", ()=>{const message=writeBox.value;
- 
+
+    //prepare the message
     let messageArray=message.split("");
     
-   //TRANSLATOR;
-   const binaryMessageTraslted= translator.traslate(messageArray, 32, ASCII, binary, binaryToString)
-   
-    send.lookElement(message,screen)
+
+    //Step 1 evaluate the request
+    //look for the input
+    //evaluateInput.evaluate();
+
+    //Step 2 create a condition to switch the translator
+
+    if(evaluateInput.evaluate(switchTraslator)=="binary"){
+        //binary TRANSLATOR;
+        const binaryMessageTraslted= translator.translate(messageArray, 32, ASCII, binary, binaryToString)
+
+        send.lookElement(message,screen)
     
-    send.lookElement(binaryMessageTraslted,responseScreen,true)
-    /*test.scroll({top:0, behavior: "smooth"})*/
+        send.lookElement(binaryMessageTraslted,responseScreen,true);
+   
+    }
+
+    else if(evaluateInput.evaluate(switchTraslator)=="text"){
+
+        //text TRANSLATOR
+        let textMessage=translator.translateToTex(message, ASCII, 32, binary.binaryToDec);
+        console.log(textMessage);
+
+        send.lookElement(textMessage,screen)
+    
+        send.lookElement(message,responseScreen,true);
+
+    }
+    
+
+    
+   
+   //sending Message
+    
+ 
          
 }
 

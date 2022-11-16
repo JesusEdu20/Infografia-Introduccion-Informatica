@@ -1,17 +1,19 @@
 //parameters
 /*
 1.messageArray: message taken from the input-text turned into speech
-2.base
-3.ASCII
-4.Binary: methods
+2.base: to calculate the dec position of the character in the ASCII table  
+3.ASCII: Ascii Table
+4.Binary: Object with the methods (convertToBinary/ binaryToDec);
 5.binaryToString: methods
 */
+
+
 
 
 export  const translator={
 
 
-    traslate( messageArray, base=32, ASCII, binary, binaryToString){
+    translate( messageArray, base=32, ASCII, binary, binaryToString){
 
     let binaryMessageTraslted;
     let binaryMessage=[];
@@ -48,7 +50,35 @@ export  const translator={
         }
     )
     return binaryMessageTraslted
-}
+},
+
+
+ translateToTex(message, ASCII, base=32, binaryToDec){
+
+    let messageTranslated="";
+    const arrayMessage=message.split(" ");
+    
+    arrayMessage.map((byte)=>{
+            
+            const arrayBytes=byte.split("");
+            const bytesNumberArray=arrayBytes.map((bit)=>{
+               return parseInt(bit)
+            })
+            console.log(bytesNumberArray)
+            let dec= binaryToDec(bytesNumberArray);
+            let index=dec-base;
+           
+            messageTranslated+=ASCII[index].name;
+
+    })
+
+    
+    console.log(messageTranslated)
+
+    return messageTranslated
+ }
+
+ 
 
 }
 
